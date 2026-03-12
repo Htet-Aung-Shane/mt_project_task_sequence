@@ -10,4 +10,10 @@
         "views/project_ext.xml",
         "views/project_task_ext.xml",
     ],
+    'images': [
+        'static/description/banner.png',
+        'static/description/screenshot1.png',  
+        'static/description/screenshot2.png',
+        'static/description/screenshot3.png',
+    ],
 }
