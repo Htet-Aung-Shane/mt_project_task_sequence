@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Task Sequence Module</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; }
+        h1 { color: #2c3e50; }
+        section { background: #fff; padding: 1.5em; border-radius: 8px; box-shadow: 0 2px 8px #eee; margin-bottom: 2em; }
+        code, pre { background: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Project Task Sequence Odoo Module</h1>
+    <section>
+        <h2>Overview</h2>
+        <p>
+            <strong>Project Task Sequence</strong> is a custom Odoo module that enhances the project management experience by introducing automatic sequencing for project tasks. This helps in organizing, tracking, and managing tasks more efficiently within Odoo's Project app.
+        </p>
+    </section>
+    <section>
+        <h2>Features</h2>
+        <ul>
+            <li>Automatically assigns a unique sequence number to each new project task.</li>
+            <li>Improves task sorting and identification.</li>
+            <li>Seamless integration with Odoo's Project module.</li>
+            <li>Easy to install and configure.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Installation</h2>
+        <ol>
+            <li>Copy the <code>project_task_sequence</code> module folder into your Odoo <code>addons</code> directory.</li>
+            <li>Update the app list in Odoo.</li>
+            <li>Install the module from the Odoo Apps menu.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Usage</h2>
+        <ol>
+            <li>Go to the Project app in Odoo.</li>
+            <li>Create a new task. The task will automatically be assigned a sequence number.</li>
+            <li>Use the sequence for sorting and referencing tasks easily.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Module Structure</h2>
+        <pre>
+project_task_sequence/
+    __init__.py
+    __manifest__.py
+    models/
+        __init__.py
+        project_project.py
+        project_task.py
+    static/
+        description/
+    views/
+        project_ext.xml
+        project_task_ext.xml
+        </pre>
+    </section>
+    <section>
+        <h2>Author</h2>
+        <p>Developed by: MT Tech</p>
+    </section>
+</body>
+</html>

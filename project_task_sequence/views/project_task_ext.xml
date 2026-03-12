@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_task_edit_form_inherit" model="ir.ui.view">
+        <field name="name">project.task.form.inherit</field>
+        <field name="model">project.task</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="task_num" readonly="1" />
+                <field name="display_name" readonly="1" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_task_kanban_inherit" model="ir.ui.view">
+        <field name="name">project.task.kanban.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_kanban" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_kanban_record_headings')]" position="after">
+                <field name="task_num" />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_tree_inherit" model="ir.ui.view">
+        <field name="name">project.task.tree.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_tree2" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="before">
+                <field name="task_num" optional="show" />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_task_search_form_inherit" model="ir.ui.view">
+        <field name="name">project.task.search.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="before">
+                <field name="task_num" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
