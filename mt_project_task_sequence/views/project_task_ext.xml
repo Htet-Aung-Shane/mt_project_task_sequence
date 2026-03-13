@@ -18,11 +18,12 @@
         <field name="model">project.task</field>
         <field name="inherit_id" ref="project.view_task_kanban" />
         <field name="arch" type="xml">
-            <xpath expr="//div[hasclass('o_kanban_record_headings')]" position="after">
+            <xpath expr="//field[@name='partner_id'][1]" position="before">
                 <field name="task_num" />
             </xpath>
         </field>
     </record>
+
     <record id="view_task_tree_inherit" model="ir.ui.view">
         <field name="name">project.task.tree.inherit</field>
         <field name="model">project.task</field>

@@ -4,7 +4,7 @@
     "application": True,
     "installable": True,
     "license": "LGPL-3",
-    "version": "17.0.0.1",
+    "version": "18.0.0.1",
     "depends": ["project"],
     "data": [
         "views/project_ext.xml",
