@@ -25,4 +25,7 @@ class ProjectTask(models.Model):
     @api.onchange('name', 'task_num')
     def _compute_display_name(self):
         for task in self:
-            task.display_name = f"[{task.task_num}] - {task.name}"
+            if task.task_num and task.name:
+                task.display_name = f"[{task.task_num}] - {task.name}"
+            else:
+                task.display_name = ""
